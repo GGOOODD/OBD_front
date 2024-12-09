@@ -45,7 +45,7 @@ const Auth = (props) => {
             <span>Пароль:</span>
             <br></br>
           </span>
-          <input type="text" id="password" placeholder="Пароль" className="input" />
+          <input type="password" id="password" placeholder="Пароль" className="input" />
         </div>
         <button type="button" onClick={tryAuth} className="auth-button1 button">
           <span>Авторизация</span>
