@@ -1,0 +1,212 @@
+.flight-info-container10 {
+  flex: 0 0 auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-fourunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fourunits);
+  background-color: var(--dl-color-theme-accent1);
+}
+.flight-info-text10 {
+  font-size: 20px;
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-transform: uppercase;
+}
+.flight-info-container11 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  box-shadow: 0px 0px 10px 0px #717171;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-theme-accent2);
+}
+.flight-info-container12 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text11 {
+  font-size: 20px;
+}
+.flight-info-text12 {
+  font-size: 20px;
+}
+.flight-info-container13 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text13 {
+  font-size: 20px;
+}
+.flight-info-text14 {
+  font-size: 20px;
+}
+.flight-info-container14 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text15 {
+  font-size: 20px;
+}
+.flight-info-text16 {
+  font-size: 20px;
+}
+.flight-info-container15 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text17 {
+  font-size: 20px;
+}
+.flight-info-text18 {
+  font-size: 20px;
+}
+.flight-info-container16 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text19 {
+  font-size: 20px;
+}
+.flight-info-text20 {
+  font-size: 20px;
+}
+.flight-info-container17 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text21 {
+  font-size: 20px;
+}
+.flight-info-text22 {
+  font-size: 20px;
+}
+.flight-info-container18 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text23 {
+  font-size: 20px;
+}
+.flight-info-text24 {
+  font-size: 20px;
+}
+.flight-info-container19 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flight-info-text25 {
+  font-size: 20px;
+}
+.flight-info-text26 {
+  font-size: 20px;
+}
+.flight-info-text27 {
+  font-size: 20px;
+  padding-top: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-transform: uppercase;
+}
+.flight-info-container20 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  box-shadow: 0px 0px 10px 0px #717171;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-theme-accent2);
+}
+.flight-info-text28 {
+  display: inline-block;
+}
+.flight-info-text29 {
+  display: inline-block;
+}
+.flight-info-text30 {
+  display: inline-block;
+  font-size: 20px;
+}
+.flight-info-text33 {
+  display: inline-block;
+}
+.flight-info-text34 {
+  display: inline-block;
+}
+.flight-info-text35 {
+  display: inline-block;
+}
+.flight-info-text36 {
+  display: inline-block;
+  font-size: 20px;
+}
+.flight-info-text39 {
+  display: inline-block;
+}
+.flight-info-button {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  align-self: center;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: var(--dl-color-theme-primary1);
+}
+.flight-info-text40 {
+  font-size: 25px;
+}

@@ -1,0 +1,433 @@
+.adm-account-container10 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.adm-account-text10 {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.adm-account-container11 {
+  width: 80%;
+  display: flex;
+  padding: var(--dl-space-space-fourunits);
+  min-height: 350px;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-theme-accent1);
+}
+.adm-account-container12 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+.adm-account-text11 {
+  font-size: 20px;
+}
+.adm-account-surname {
+  font-size: 20px;
+}
+.adm-account-container13 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+.adm-account-text14 {
+  font-size: 20px;
+}
+.adm-account-name {
+  font-size: 20px;
+}
+.adm-account-container14 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+.adm-account-text17 {
+  font-size: 20px;
+}
+.adm-account-patronymic {
+  font-size: 20px;
+}
+.adm-account-container15 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+.adm-account-text20 {
+  font-size: 20px;
+}
+.adm-account-text23 {
+  font-size: 20px;
+}
+.adm-account-button1 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-container16 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+}
+.adm-account-button2 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-button3 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text27 {
+  color: #ff0000;
+  font-size: 20px;
+}
+.adm-account-button4 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-container17 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+}
+.adm-account-textinput2 {
+  width: 170px;
+}
+.adm-account-textinput3 {
+  width: 170px;
+}
+.adm-account-textinput4 {
+  width: 170px;
+}
+.adm-account-button5 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-button6 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text31 {
+  color: #ff0000;
+  font-size: 20px;
+}
+.adm-account-button7 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text33 {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.adm-account-container18 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+}
+.adm-account-container19 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary2);
+}
+.adm-account-text34 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container20 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text35 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container21 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text36 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container22 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text37 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container23 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text38 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container24 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text39 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container25 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text40 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container26 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text41 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container27 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text42 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container28 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text43 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container29 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text44 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container30 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text45 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container31 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text46 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-container32 {
+  flex: 0 0 auto;
+  width: 20%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  justify-content: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-account-text47 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-transform: uppercase;
+}
+.adm-account-text48 {
+  display: inline-block;
+}
+.adm-account-text49 {
+  display: inline-block;
+}
+.adm-account-text50 {
+  display: inline-block;
+}
+.adm-account-text51 {
+  display: inline-block;
+}
+.adm-account-text52 {
+  display: inline-block;
+}
+.adm-account-text53 {
+  display: inline-block;
+}
+.adm-account-text54 {
+  display: inline-block;
+}
+.adm-account-text55 {
+  display: inline-block;
+}
+.adm-account-text56 {
+  display: inline-block;
+}
+.adm-account-text57 {
+  display: inline-block;
+}
+.adm-account-text58 {
+  display: inline-block;
+}
+.adm-account-text59 {
+  display: inline-block;
+}
+.adm-account-text60 {
+  display: inline-block;
+}
+.adm-account-text61 {
+  display: inline-block;
+}
+.adm-account-text62 {
+  display: inline-block;
+}
+

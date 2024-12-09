@@ -1,0 +1,212 @@
+.pers-account-container1 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.pers-account-text10 {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.pers-account-container2 {
+  width: 80%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-fourunits);
+  min-height: 350px;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-theme-accent1);
+}
+.pers-account-container3 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.pers-account-text11 {
+  font-size: 20px;
+}
+.pers-account-surname {
+  font-size: 20px;
+}
+.pers-account-container4 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.pers-account-text14 {
+  font-size: 20px;
+}
+.pers-account-name {
+  font-size: 20px;
+}
+.pers-account-container5 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.pers-account-text17 {
+  font-size: 20px;
+}
+.pers-account-patronymic {
+  font-size: 20px;
+}
+.pers-account-container6 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.pers-account-text20 {
+  font-size: 20px;
+}
+.pers-account-text23 {
+  font-size: 20px;
+}
+.pers-account-button1 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.pers-account-container7 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+}
+.pers-account-button2 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.pers-account-button3 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.pers-account-text27 {
+  color: #ff0000;
+  font-size: 20px;
+}
+.pers-account-button4 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.pers-account-container8 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+}
+.pers-account-textinput2 {
+  width: 170px;
+}
+.pers-account-textinput3 {
+  width: 170px;
+}
+.pers-account-textinput4 {
+  width: 170px;
+}
+.pers-account-button5 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.pers-account-button6 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.pers-account-text31 {
+  color: #ff0000;
+  font-size: 20px;
+}
+.pers-account-button7 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.pers-account-text33 {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.pers-account-container9 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.pers-account-text34 {
+  display: inline-block;
+}
+.pers-account-text37 {
+  display: inline-block;
+}
+.pers-account-text40 {
+  display: inline-block;
+}
+.pers-account-text43 {
+  display: inline-block;
+}
+.pers-account-text46 {
+  display: inline-block;
+}
+.pers-account-text49 {
+  display: inline-block;
+}
+.pers-account-text52 {
+  display: inline-block;
+}
+.pers-account-text55 {
+  display: inline-block;
+}
+.pers-account-text58 {
+  display: inline-block;
+}
+.pers-account-text61 {
+  display: inline-block;
+}
+.pers-account-text64 {
+  display: inline-block;
+}
+.pers-account-text65 {
+  display: inline-block;
+}

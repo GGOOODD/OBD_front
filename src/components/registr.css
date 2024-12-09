@@ -1,0 +1,106 @@
+.registr-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.registr-text10 {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.registr-container2 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-theme-accent1);
+}
+.registr-container3 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.registr-text11 {
+  font-size: 20px;
+}
+.registr-container4 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.registr-text14 {
+  font-size: 20px;
+}
+.registr-container5 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.registr-text17 {
+  font-size: 20px;
+}
+.registr-container6 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.registr-text20 {
+  font-size: 20px;
+}
+.registr-container7 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.registr-text23 {
+  font-size: 20px;
+}
+.registr-button1 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.registr-button2 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-top: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.registr-text28 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+}

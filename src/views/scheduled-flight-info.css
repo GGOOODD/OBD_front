@@ -1,0 +1,114 @@
+.home-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.home-container2 {
+  flex: 0 0 auto;
+  width: 90%;
+  display: flex;
+  max-width: 1300px;
+  align-self: center;
+  min-height: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: flex-start;
+  background-color: var(--dl-color-theme-secondary1);
+}
+.home-text10 {
+  display: inline-block;
+}
+.home-text11 {
+  display: inline-block;
+}
+.home-text12 {
+  display: inline-block;
+}
+.home-text13 {
+  display: inline-block;
+}
+.home-text14 {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.home-container3 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+}
+.home-text15 {
+  font-size: 20px;
+}
+.home-button {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  align-self: center;
+  background-color: var(--dl-color-theme-primary1);
+}
+.home-text16 {
+  font-size: 22px;
+}
+.home-text17 {
+  display: inline-block;
+}
+.home-text20 {
+  display: inline-block;
+}
+.home-text23 {
+  display: inline-block;
+}
+.home-text26 {
+  display: inline-block;
+}
+.home-text29 {
+  display: inline-block;
+}
+.home-container4 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-text32 {
+  display: inline-block;
+}
+.home-text35 {
+  display: inline-block;
+}
+.home-text38 {
+  display: inline-block;
+}
+.home-text41 {
+  display: inline-block;
+}
+.home-text44 {
+  display: inline-block;
+}
+.home-text47 {
+  display: inline-block;
+}
+.home-text50 {
+  display: inline-block;
+}
+.home-text53 {
+  display: inline-block;
+}
+.home-text56 {
+  display: inline-block;
+}
+.home-text59 {
+  display: inline-block;
+}

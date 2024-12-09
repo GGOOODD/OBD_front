@@ -1,0 +1,38 @@
+.crew-container {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+.crew-text10 {
+  font-size: 20px;
+}
+.crew-text11 {
+  font-size: 20px;
+}
+.crew-text12 {
+  font-size: 20px;
+}
+.crew-text13 {
+  font-size: 20px;
+  padding-left: var(--dl-space-space-halfunit);
+}
+.crew-text14 {
+  font-size: 20px;
+}
+.crew-text15 {
+  display: inline-block;
+}
+.crew-text16 {
+  display: inline-block;
+  font-size: 20px;
+}
+.crew-text19 {
+  display: inline-block;
+}
+.crew-text20 {
+  display: inline-block;
+}

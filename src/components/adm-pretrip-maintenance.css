@@ -1,0 +1,129 @@
+.adm-pretrip-maintenance-container1 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 95%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  background-color: var(--dl-color-theme-accent1);
+}
+.adm-pretrip-maintenance-text10 {
+  font-size: 25px;
+  align-self: center;
+  text-transform: uppercase;
+}
+.adm-pretrip-maintenance-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.adm-pretrip-maintenance-container3 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.adm-pretrip-maintenance-container4 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.adm-pretrip-maintenance-button1 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-right: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-pretrip-maintenance-button2 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-pretrip-maintenance-container5 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  overflow: scroll;
+  box-shadow: 0px 0px 10px 0px #a3a3a3;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+}
+.adm-pretrip-maintenance-text15 {
+  display: inline-block;
+}
+.adm-pretrip-maintenance-text16 {
+  display: inline-block;
+}
+.adm-pretrip-maintenance-text17 {
+  display: inline-block;
+}
+.adm-pretrip-maintenance-text18 {
+  display: inline-block;
+}
+.adm-pretrip-maintenance-text19 {
+  display: inline-block;
+}
+.adm-pretrip-maintenance-text20 {
+  display: inline-block;
+}
+.adm-pretrip-maintenance-text21 {
+  display: inline-block;
+}
+.adm-pretrip-maintenance-container6 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 40%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-halfunit);
+  flex-direction: column;
+}
+.adm-pretrip-maintenance-container7 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.adm-pretrip-maintenance-button3 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-pretrip-maintenance-text23 {
+  color: #ff0000;
+  font-size: 20px;
+}
+.adm-pretrip-maintenance-container8 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.adm-pretrip-maintenance-button4 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-pretrip-maintenance-button5 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-pretrip-maintenance-text26 {
+  color: #ff0000;
+  font-size: 20px;
+}
+

@@ -1,0 +1,115 @@
+.adm-airline-container1 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 95%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  background-color: var(--dl-color-theme-accent1);
+}
+.adm-airline-text10 {
+  font-size: 25px;
+  align-self: center;
+  text-transform: uppercase;
+}
+.adm-airline-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.adm-airline-container3 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.adm-airline-container4 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+.adm-airline-button1 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  margin-right: var(--dl-space-space-unit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-airline-button2 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-airline-container5 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  overflow: scroll;
+  box-shadow: 0px 0px 10px 0px #a3a3a3;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+}
+.adm-airline-text15 {
+  display: inline-block;
+}
+.adm-airline-container6 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 40%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-halfunit);
+  flex-direction: column;
+}
+.adm-airline-container7 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.adm-airline-button3 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-airline-text17 {
+  color: #ff0000;
+  font-size: 20px;
+}
+.adm-airline-container8 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.adm-airline-button4 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-airline-button5 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  background-color: var(--dl-color-theme-primary1);
+}
+.adm-airline-text20 {
+  color: #ff0000;
+  font-size: 20px;
+}
+

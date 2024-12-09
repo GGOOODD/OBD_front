@@ -1,0 +1,38 @@
+.scheduled-flight-container1 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.scheduled-flight-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: var(--dl-size-size-medium);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.scheduled-flight-text10 {
+  display: inline-block;
+}
+.scheduled-flight-text13 {
+  display: inline-block;
+}
+.scheduled-flight-text16 {
+  display: inline-block;
+}
+.scheduled-flight-text19 {
+  display: inline-block;
+}
+.scheduled-flight-text22 {
+  display: inline-block;
+}
+
+
+
+.scheduled-flightroot-class-name5 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+  background-color: var(--dl-color-theme-accent2);
+}
