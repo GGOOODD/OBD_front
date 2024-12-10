@@ -6,7 +6,7 @@ import './elem-settlement.css'
 
 const ElemSettlement = (props) => {
   return (
-    <div className={`elem-settlement-container1 ${props.rootClassName} `}>
+    <div onClick={() => {props.setChoose(props.id)}} className={`elem-settlement-container${props.id == 0 ? 10 : 11}`}>
       <div className="elem-settlement-container2">
         <span className="elem-settlement-text1">Название:</span>
         <span className="elem-settlement-text2">

@@ -1,58 +1,158 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 
 import ElemCountry from './elem-country'
 import './adm-country.css'
 
 const AdmCountry = (props) => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [items, setItems] = useState([]);
+  const [choose, setChoose] = useState(0)
+
+  const fetchCountry = async () => {
+    const response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_country");
+    const elems = await response.json();
+    setItems(elems);
+  }
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredItems = items.filter(item =>
+    item["name"].toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  useEffect(() => {
+    fetchCountry();
+  }, []);
+
+  const createField = async () => {
+    var errorStr = document.getElementById("error")
+    errorStr.textContent = ""
+    const namestr = document.getElementById("name").value
+    const geocodestr = document.getElementById("geocode").value
+    if (namestr == "" || geocodestr == "")
+      return
+    let dict = {"name": namestr, "geocode": geocodestr}
+    const requestOptions = {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(dict),
+      credentials: 'include'
+    }
+    const response = await fetch("http://localhost:8000/api/classifier/create_country", requestOptions)
+    var fetchInfo = await response.json();
+    if (response.ok)
+    {
+      var newItems = structuredClone(items)
+      newItems[newItems.length] = dict
+      newItems[newItems.length-1]["id"] = fetchInfo["field_id"]
+      setItems(newItems)
+    }
+    else
+    {
+      errorStr.textContent = "Данные неверно введены"
+    }
+  }
+
+  const updateField = async () => {
+    var errorStr = document.getElementById("error")
+    errorStr.textContent = ""
+    const namestr = document.getElementById("name").value
+    const geocodestr = document.getElementById("geocode").value
+    if (namestr == "" || geocodestr == "")
+      return
+    let dict = {"name": namestr, "geocode": geocodestr}
+    const requestOptions = {
+      method: "PUT",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(dict),
+      credentials: 'include'
+    }
+    var response = await fetch(`http://localhost:8000/api/classifier/update_country/${choose}`, requestOptions)
+    var fetchInfo = await response.json();
+    if (response.ok)
+    {
+      const newItems = items.map(item => 
+        item.id === choose ? { ...item, ...dict } : item
+      )
+      setItems(newItems)
+    }
+    else
+    {
+      errorStr.textContent = "Данные неверно введены"
+    }
+  }
+
+  const deleteField = async () => {
+    var errorStr = document.getElementById("error")
+    errorStr.textContent = ""
+    const requestOptions = {
+      method: "DELETE",
+      credentials: 'include'
+    }
+    var response = await fetch(`http://localhost:8000/api/classifier/delete_country/${choose}`, requestOptions)
+    var fetchInfo = await response.json();
+    if (response.ok)
+    {
+      var newItems = items.filter(item => item["id"] != choose)
+      setChoose(0)
+      setItems(newItems)
+    }
+  }
+/*
+<button type="button" className="adm-country-button1 button">
+  <span>Загрузить данные</span>
+</button>
+
+<button type="button" className="adm-country-button2 button">
+  <span>Найти</span>
+</button>
+*/
   return (
     <div className="adm-country-container1">
-      <span className="adm-country-text10">СтранА</span>
+      <span className="adm-country-text10">Страна</span>
       <div className="adm-country-container2">
         <div className="adm-country-container3">
           <div className="adm-country-container4">
-            <button type="button" className="adm-country-button1 button">
-              <span>Загрузить данные</span>
-            </button>
-            <input type="text" placeholder="Название" className="input" />
-            <button type="button" className="adm-country-button2 button">
-              <span>Найти</span>
-            </button>
+            <input type="text" onChange={handleSearch} placeholder="Название" className="input" />
           </div>
           <div className="adm-country-container5">
-            <ElemCountry
-              name={
-                <Fragment>
-                  <span className="adm-country-text13">Text</span>
-                </Fragment>
-              }
-              geocode={
-                <Fragment>
-                  <span className="adm-country-text14">Text</span>
-                </Fragment>
-              }
-            ></ElemCountry>
+            {filteredItems.map((item) => (
+              <ElemCountry setChoose={setChoose}
+                key={item["id"]}
+                id={choose == item["id"] ? 0 : item["id"]}
+                name={
+                  <Fragment>
+                    <span className="adm-country-text13">{item["name"]}</span>
+                  </Fragment>
+                }
+                geocode={
+                  <Fragment>
+                    <span className="adm-country-text14">{item["geocode"]}</span>
+                  </Fragment>
+                }
+              ></ElemCountry>
+            ))}
           </div>
         </div>
         <div className="adm-country-container6">
-          <div className="adm-country-container7">
-            <input type="text" placeholder="Название" className="input" />
-            <input type="text" placeholder="Геокод" className="input" />
-            <button type="button" className="adm-country-button3 button">
+          <input type="text" id="name" placeholder="Название" className="input" />
+          <input type="text" id="geocode" placeholder="Геокод" className="input" />
+          {choose == 0 ?
+            <button type="button" onClick={createField} className="adm-country-button3 button">
               <span>Создать</span>
             </button>
-          </div>
-          <span className="adm-country-text16">Error</span>
-          <div className="adm-country-container8">
-            <input type="text" placeholder="Название" className="input" />
-            <input type="text" placeholder="Геокод" className="input" />
-            <button type="button" className="adm-country-button4 button">
+          :
+            <>
+            <button type="button" onClick={updateField} className="adm-country-button4 button">
               <span>Изменить</span>
             </button>
-            <button type="button" className="adm-country-button5 button">
+            <button type="button" onClick={deleteField} className="adm-country-button5 button">
               <span>Удалить</span>
             </button>
-            <span className="adm-country-text19">Error</span>
-          </div>
+            </>
+          }
+          <span id="error" className="adm-country-text16"></span>
         </div>
       </div>
     </div>

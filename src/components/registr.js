@@ -21,7 +21,7 @@ const Registr = (props) => {
       credentials: 'include'
     }
     const response = await fetch("http://localhost:8000/api/auth/register", requestOptions)
-    if (response.status === 200)
+    if (response.ok)
     {
       window.location.href = 'http://localhost:3000/user'
     } else
