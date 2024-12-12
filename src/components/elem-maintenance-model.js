@@ -6,15 +6,15 @@ import './elem-maintenance-model.css'
 
 const ElemMaintenanceModel = (props) => {
   return (
-    <div
-      className={`elem-maintenance-model-container1 ${props.rootClassName} `}
+    <div onClick={() => {props.setChoose(props.id)}}
+      className={`elem-maintenance-model-container${props.id == 0 ? 10 : 11}`}
     >
       <div className="elem-maintenance-model-container2">
         <span className="elem-maintenance-model-text1">Название:</span>
         <span className="elem-maintenance-model-text2">
-          {props.airplaneName ?? (
+          {props.name ?? (
             <Fragment>
-              <span className="elem-maintenance-model-text5">airplaneName</span>
+              <span className="elem-maintenance-model-text5">name</span>
             </Fragment>
           )}
         </span>
@@ -37,13 +37,13 @@ const ElemMaintenanceModel = (props) => {
 
 ElemMaintenanceModel.defaultProps = {
   rootClassName: '',
-  airplaneName: undefined,
+  name: undefined,
   description: undefined,
 }
 
 ElemMaintenanceModel.propTypes = {
   rootClassName: PropTypes.string,
-  airplaneName: PropTypes.element,
+  name: PropTypes.element,
   description: PropTypes.element,
 }
 

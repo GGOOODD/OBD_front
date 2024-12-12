@@ -6,7 +6,7 @@ import './elem-flight.css'
 
 const ElemFlight = (props) => {
   return (
-    <div className={`elem-flight-container1 ${props.rootClassName} `}>
+    <div onClick={() => {props.setChoose(props.id)}} className={`elem-flight-container${props.id == 0 ? 10 : 11}`}>
       <div className="elem-flight-container2">
         <span className="elem-flight-text1">Название авиакомпании:</span>
         <span className="elem-flight-text2">

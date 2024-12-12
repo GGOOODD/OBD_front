@@ -32,9 +32,10 @@ const AdmSettlement = (props) => {
     const namestr = document.getElementById("name").value
     const countryNamestr = document.getElementById("countryName").value
     const settlementTypestr = document.getElementById("settlementType").value
-    if (namestr == "" || countryNamestr == "" || settlementTypestr == "")
-      return
     let dict = {"name": namestr, "countryName": countryNamestr, "settlementType": settlementTypestr}
+    for (const [key, value] of Object.entries(dict))
+      if (value == "")
+        return
     const requestOptions = {
       method: "POST",
       headers: {"Content-Type": "application/json"},
@@ -62,9 +63,10 @@ const AdmSettlement = (props) => {
     const namestr = document.getElementById("name").value
     const countryNamestr = document.getElementById("countryName").value
     const settlementTypestr = document.getElementById("settlementType").value
-    if (namestr == "" || countryNamestr == "" || settlementTypestr == "")
-      return
     let dict = {"name": namestr, "countryName": countryNamestr, "settlementType": settlementTypestr}
+    for (const [key, value] of Object.entries(dict))
+      if (value == "")
+        return
     const requestOptions = {
       method: "PUT",
       headers: {"Content-Type": "application/json"},

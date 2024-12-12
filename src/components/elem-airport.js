@@ -6,7 +6,7 @@ import './elem-airport.css'
 
 const ElemAirport = (props) => {
   return (
-    <div className={`elem-airport-container1 ${props.rootClassName} `}>
+    <div onClick={() => {props.setChoose(props.id)}} className={`elem-airport-container${props.id == 0 ? 10 : 11} `}>
       <div className="elem-airport-container2">
         <span className="elem-airport-text1">Название:</span>
         <span className="elem-airport-text2">

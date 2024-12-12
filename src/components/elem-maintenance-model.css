@@ -1,4 +1,4 @@
-.elem-maintenance-model-container1 {
+.elem-maintenance-model-container11 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -9,6 +9,18 @@
   border-radius: var(--dl-radius-radius-radius8);
   flex-direction: column;
   background-color: var(--dl-color-theme-accent2);
+}
+.elem-maintenance-model-container10 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  position: relative;
+  box-shadow: 0px 0px 10px 0px #a9a9a9;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  background-color: #6085ff;
 }
 .elem-maintenance-model-container2 {
   gap: var(--dl-space-space-halfunit);

@@ -4,35 +4,36 @@ import ElemCountry from './elem-country'
 import './adm-country.css'
 
 const AdmCountry = (props) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [items, setItems] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('')
+  const [items, setItems] = useState([])
   const [choose, setChoose] = useState(0)
 
   const fetchCountry = async () => {
-    const response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_country");
-    const elems = await response.json();
-    setItems(elems);
+    const response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_country")
+    const elems = await response.json()
+    setItems(elems)
   }
   const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
+    setSearchTerm(e.target.value)
   };
 
   const filteredItems = items.filter(item =>
     item["name"].toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  )
 
   useEffect(() => {
     fetchCountry();
-  }, []);
+  }, [])
 
   const createField = async () => {
     var errorStr = document.getElementById("error")
     errorStr.textContent = ""
     const namestr = document.getElementById("name").value
     const geocodestr = document.getElementById("geocode").value
-    if (namestr == "" || geocodestr == "")
-      return
     let dict = {"name": namestr, "geocode": geocodestr}
+    for (const [key, value] of Object.entries(dict))
+      if (value == "")
+        return
     const requestOptions = {
       method: "POST",
       headers: {"Content-Type": "application/json"},
@@ -59,9 +60,10 @@ const AdmCountry = (props) => {
     errorStr.textContent = ""
     const namestr = document.getElementById("name").value
     const geocodestr = document.getElementById("geocode").value
-    if (namestr == "" || geocodestr == "")
-      return
     let dict = {"name": namestr, "geocode": geocodestr}
+    for (const [key, value] of Object.entries(dict))
+      if (value == "")
+        return
     const requestOptions = {
       method: "PUT",
       headers: {"Content-Type": "application/json"},
@@ -117,40 +119,40 @@ const AdmCountry = (props) => {
             <input type="text" onChange={handleSearch} placeholder="Название" className="input" />
           </div>
           <div className="adm-country-container5">
-            {filteredItems.map((item) => (
-              <ElemCountry setChoose={setChoose}
-                key={item["id"]}
-                id={choose == item["id"] ? 0 : item["id"]}
-                name={
-                  <Fragment>
-                    <span className="adm-country-text13">{item["name"]}</span>
-                  </Fragment>
-                }
-                geocode={
-                  <Fragment>
-                    <span className="adm-country-text14">{item["geocode"]}</span>
-                  </Fragment>
-                }
-              ></ElemCountry>
-            ))}
+          {filteredItems.map((item) => (
+            <ElemCountry setChoose={setChoose}
+              key={item["id"]}
+              id={choose == item["id"] ? 0 : item["id"]}
+              name={
+                <Fragment>
+                  <span className="adm-country-text13">{item["name"]}</span>
+                </Fragment>
+              }
+              geocode={
+                <Fragment>
+                  <span className="adm-country-text14">{item["geocode"]}</span>
+                </Fragment>
+              }
+            ></ElemCountry>
+          ))}
           </div>
         </div>
         <div className="adm-country-container6">
           <input type="text" id="name" placeholder="Название" className="input" />
           <input type="text" id="geocode" placeholder="Геокод" className="input" />
           {choose == 0 ?
-            <button type="button" onClick={createField} className="adm-country-button3 button">
-              <span>Создать</span>
-            </button>
+          <button type="button" onClick={createField} className="adm-country-button3 button">
+            <span>Создать</span>
+          </button>
           :
-            <>
-            <button type="button" onClick={updateField} className="adm-country-button4 button">
-              <span>Изменить</span>
-            </button>
-            <button type="button" onClick={deleteField} className="adm-country-button5 button">
-              <span>Удалить</span>
-            </button>
-            </>
+          <>
+          <button type="button" onClick={updateField} className="adm-country-button4 button">
+            <span>Изменить</span>
+          </button>
+          <button type="button" onClick={deleteField} className="adm-country-button5 button">
+            <span>Удалить</span>
+          </button>
+          </>
           }
           <span id="error" className="adm-country-text16"></span>
         </div>

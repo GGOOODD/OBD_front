@@ -6,7 +6,7 @@ import './elem-shop.css'
 
 const ElemShop = (props) => {
   return (
-    <div className="elem-shop-container1">
+    <div onClick={() => {props.setChoose(props.id)}} className={`elem-shop-container${props.id == 0 ? 10 : 11}`}>
       <div className="elem-shop-container2">
         <span className="elem-shop-text1">Название:</span>
         <span className="elem-shop-text2">
