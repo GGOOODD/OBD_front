@@ -6,7 +6,7 @@ import './elem-employee.css'
 
 const ElemEmployee = (props) => {
   return (
-    <div className={`elem-employee-container1 ${props.rootClassName} `}>
+    <div onClick={() => {props.setChoose(props.id)}} className={`elem-employee-container${props.id == 0 ? 10 : 11}`}>
       <div className="elem-employee-container2">
         <span className="elem-employee-text10">Должность:</span>
         <span className="elem-employee-text11">

@@ -24,7 +24,7 @@
 .adm-scheduled-flight-container12 {
   gap: var(--dl-space-space-halfunit);
   flex: 0 0 auto;
-  width: 60%;
+  width: 70%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -116,7 +116,7 @@
 .adm-scheduled-flight-container17 {
   gap: var(--dl-space-space-halfunit);
   flex: 0 0 auto;
-  width: 40%;
+  width: 30%;
   display: flex;
   position: relative;
   align-items: flex-start;

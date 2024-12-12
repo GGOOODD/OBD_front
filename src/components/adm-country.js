@@ -51,7 +51,10 @@ const AdmCountry = (props) => {
     }
     else
     {
-      errorStr.textContent = "Данные неверно введены"
+      if (typeof fetchInfo["detail"] === "string")
+        errorStr.textContent = fetchInfo["detail"]
+      else
+        errorStr.textContent = "Превышина длина полей"
     }
   }
 
@@ -81,7 +84,10 @@ const AdmCountry = (props) => {
     }
     else
     {
-      errorStr.textContent = "Данные неверно введены"
+      if (typeof fetchInfo["detail"] === "string")
+        errorStr.textContent = fetchInfo["detail"]
+      else
+        errorStr.textContent = "Превышина длина полей"
     }
   }
 

@@ -6,8 +6,8 @@ import './elem-pretrip-maintenance.css'
 
 const ElemPretripMaintenance = (props) => {
   return (
-    <div
-      className={`elem-pretrip-maintenance-container1 ${props.rootClassName} `}
+    <div onClick={() => {props.setChoose(props.id)}}
+      className={`elem-pretrip-maintenance-container${props.id == 0 ? 10 : 11}`}
     >
       <div className="elem-pretrip-maintenance-container2">
         <span className="elem-pretrip-maintenance-text10">
