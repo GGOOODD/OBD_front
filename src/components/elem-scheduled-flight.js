@@ -6,7 +6,7 @@ import './elem-scheduled-flight.css'
 
 const ElemScheduledFlight = (props) => {
   return (
-    <div className={`elem-scheduled-flight-container1 ${props.rootClassName} `}>
+    <div onClick={() => {props.setChoose(props.id)}} className={`elem-scheduled-flight-container${props.id == 0 ? 10 : 11}`}>
       <div className="elem-scheduled-flight-container2">
         <span className="elem-scheduled-flight-text10">
           Название авиакомпании:
@@ -87,6 +87,37 @@ const ElemScheduledFlight = (props) => {
           )}
         </span>
       </div>
+      <span className="elem-scheduled-flight-text20">
+        Экипаж:
+      </span>
+      {props.crew.length == 0 &&
+        <span className="elem-scheduled-flight-text20">
+          Отсутствует
+        </span>
+      }
+      {props.crew.length !== 0 &&
+        props.crew.map((item) => (
+      <div className="elem-scheduled-flight-container7">
+        <span className="elem-scheduled-flight-text20">
+          ФИО:
+        </span>
+        <span className="elem-scheduled-flight-text21">
+            <span className="elem-scheduled-flight-text25">
+              {item["surname"]}
+            </span>
+        </span>
+        <span className="elem-scheduled-flight-text21">
+            <span className="elem-scheduled-flight-text25">
+              {item["name"]}
+            </span>
+        </span>
+        <span className="elem-scheduled-flight-text21">
+            <span className="elem-scheduled-flight-text25">
+              {item["patronymic"]}
+            </span>
+        </span>
+      </div>
+      ))}
     </div>
   )
 }

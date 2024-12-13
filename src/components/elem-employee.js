@@ -6,7 +6,12 @@ import './elem-employee.css'
 
 const ElemEmployee = (props) => {
   return (
-    <div onClick={() => {props.setChoose(props.id)}} className={`elem-employee-container${props.id == 0 ? 10 : 11}`}>
+    <div onClick={() => {if (props.setChoose) props.setChoose(props.id)
+      else if (props.id != 0)
+        props.setChooseEmployee([...props.chooseEmployee, props.real_id])
+      else
+        props.setChooseEmployee(props.chooseEmployee.filter(item => item !== props.real_id))}}
+      className={`elem-employee-container${props.id == 0 ? 10 : 11}`}>
       <div className="elem-employee-container2">
         <span className="elem-employee-text10">Должность:</span>
         <span className="elem-employee-text11">

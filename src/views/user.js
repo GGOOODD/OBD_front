@@ -17,7 +17,7 @@ const User = (props) => {
     if (cookie === undefined)
       setWindow(<Auth setWindow={setWindow}></Auth>)
     else
-      setWindow(<AdmAccount></AdmAccount>)
+      setWindow(<PersAccount></PersAccount>)
   }
 
   useEffect(() => {

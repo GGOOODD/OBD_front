@@ -9,7 +9,7 @@ const FlightInfo = (props) => {
   const [list, setList] = useState([]);
 
   const fetchScheduledFlightInfo = async () => {
-    const response = await fetch(`http://127.0.0.1:8000/api/flight/get_scheduled_flight/${window.location.href.split('/').pop()}`);
+    const response = await fetch(`http://localhost:8000/api/flight/get_scheduled_flight/${window.location.href.split('/').pop()}`);
     const scheduledFlight = await response.json();
     setInfo(scheduledFlight);
     setList(scheduledFlight["crew"]);
@@ -30,7 +30,7 @@ const FlightInfo = (props) => {
       method: "POST",
       credentials: 'include'
     }
-    const response = await fetch(`http://127.0.0.1:8000/api/user/create_flight_history/${window.location.href.split('/').pop()}`, requestOptions)
+    const response = await fetch(`http://localhost:8000/api/user/create_flight_history/${window.location.href.split('/').pop()}`, requestOptions)
     const info = await response.json()
     var textElem = document.getElementById("buyDescription")
     textElem.textContent = info["detail"]
