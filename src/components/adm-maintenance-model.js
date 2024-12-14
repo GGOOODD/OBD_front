@@ -11,7 +11,11 @@ const AdmMaintenanceModel = (props) => {
   const [choose, setChoose] = useState(0)
 
   const fetchMaintenanceModel = async () => {
-    const response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_maintenance_model")
+    const requestOptions = {
+      method: "GET",
+      credentials: 'include'
+    }
+    const response = await fetch("http://localhost:8000/api/classifier/get_all_maintenance_model", requestOptions)
     const elems = await response.json()
     setItems(elems)
   }

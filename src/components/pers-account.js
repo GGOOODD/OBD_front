@@ -41,6 +41,8 @@ const PersAccount = (props) => {
   
   const passwordChangeRequest = async () => {
     const passwordstr = document.getElementById("password").value
+    var errorStr = document.getElementById("passwordError")
+    errorStr.textContent = ""
     let dict = {"password": passwordstr}
     const requestOptions = {
       method: "PUT",
@@ -49,7 +51,7 @@ const PersAccount = (props) => {
       credentials: 'include'
     }
     var successStr = document.getElementById("passwordSuccess")
-    var errorStr = document.getElementById("passwordError")
+    
     const response = await fetch("http://localhost:8000/api/user/change_password", requestOptions)
     if (response.status === 200)
     {
@@ -63,6 +65,8 @@ const PersAccount = (props) => {
   }
 
   const fioChangeRequest = async () => {
+    var errorStr = document.getElementById("fioError")
+    errorStr.textContent = ""
     const surnamestr = document.getElementById("surname").value
     const namestr = document.getElementById("name").value
     const patronymicstr = document.getElementById("patronymic").value
@@ -82,7 +86,6 @@ const PersAccount = (props) => {
     }
     else
     {
-      var errorStr = document.getElementById("fioError")
       errorStr.textContent = "Длина полей превышает максимальное значение"
     }
   }

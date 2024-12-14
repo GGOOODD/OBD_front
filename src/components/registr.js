@@ -21,13 +21,17 @@ const Registr = (props) => {
       credentials: 'include'
     }
     const response = await fetch("http://localhost:8000/api/auth/register", requestOptions)
+    const fetchInfo = await response.json()
     if (response.ok)
     {
       window.location.href = 'http://localhost:3000/user'
     } else
     {
-      var error = document.getElementById("error")
-      error.textContent = "Данная почта уже зарегистрирована"
+      var errorStr = document.getElementById("error")
+      if (typeof fetchInfo["detail"] === "string")
+        errorStr.textContent = fetchInfo["detail"]
+      else
+        errorStr.textContent = "Превышина длина полей"
     }
   }
 

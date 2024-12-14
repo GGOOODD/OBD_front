@@ -11,7 +11,11 @@ const AdmFlight = (props) => {
   const [choose, setChoose] = useState(0)
 
   const fetchFlight = async () => {
-    const response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_flight")
+    const requestOptions = {
+      method: "GET",
+      credentials: 'include'
+    }
+    const response = await fetch("http://localhost:8000/api/classifier/get_all_flight", requestOptions)
     const elems = await response.json()
     setItems(elems)
   }

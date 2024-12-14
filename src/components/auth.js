@@ -19,13 +19,17 @@ const Auth = (props) => {
       credentials: 'include'
     }
     const response = await fetch("http://localhost:8000/api/auth/login", requestOptions)
+    const fetchInfo = await response.json();
     if (response.ok)
     {
       window.location.href = 'http://localhost:3000/user'
     } else
     {
-      var error = document.getElementById("error")
-      error.textContent = "Неверные данные"
+      var errorStr = document.getElementById("error")
+      if (typeof fetchInfo["detail"] === "string")
+        errorStr.textContent = fetchInfo["detail"]
+      else
+        errorStr.textContent = "Превышина длина полей"
     }
   }
 

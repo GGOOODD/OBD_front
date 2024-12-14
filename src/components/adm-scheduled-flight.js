@@ -19,10 +19,14 @@ const AdmScheduledFlight = (props) => {
   const [chooseEmployee, setChooseEmployee] = useState([])
 
   const fetchScheduledFlight = async () => {
-    var response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_scheduled_flight")
+    const requestOptions = {
+      method: "GET",
+      credentials: 'include'
+    }
+    var response = await fetch("http://localhost:8000/api/classifier/get_all_scheduled_flight", requestOptions)
     var elems = await response.json()
     setItems(elems)
-    response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_employee")
+    response = await fetch("http://localhost:8000/api/classifier/get_all_employee", requestOptions)
     elems = await response.json()
     setItemsEmployee(elems)
   }

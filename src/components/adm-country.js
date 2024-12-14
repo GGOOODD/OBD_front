@@ -9,7 +9,11 @@ const AdmCountry = (props) => {
   const [choose, setChoose] = useState(0)
 
   const fetchCountry = async () => {
-    const response = await fetch("http://127.0.0.1:8000/api/classifier/get_all_country")
+    const requestOptions = {
+      method: "GET",
+      credentials: 'include'
+    }
+    const response = await fetch("http://localhost:8000/api/classifier/get_all_country", requestOptions)
     const elems = await response.json()
     setItems(elems)
   }

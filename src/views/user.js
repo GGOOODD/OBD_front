@@ -17,7 +17,19 @@ const User = (props) => {
     if (cookie === undefined)
       setWindow(<Auth setWindow={setWindow}></Auth>)
     else
-      setWindow(<PersAccount></PersAccount>)
+    {
+      const requestOptions = {
+        method: "GET",
+        credentials: 'include'
+      }
+      const response = await fetch("http://localhost:8000/api/user/check_user_admin", requestOptions)
+      const fetchInfo = await response.json();
+      if (fetchInfo["admin"])
+        setWindow(<AdmAccount></AdmAccount>)
+      else
+        setWindow(<PersAccount></PersAccount>)
+    }
+      
   }
 
   useEffect(() => {
