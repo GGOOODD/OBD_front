@@ -117,7 +117,7 @@ const AdmScheduledFlightModel = (props) => {
       className={`adm-scheduled-flight-model-container1 ${props.rootClassName} `}
     >
       <span className="adm-scheduled-flight-model-text10">
-        <span>Тип назначенного рейса</span>
+        <span>Тип назначенных рейсов</span>
         <br></br>
       </span>
       <div className="adm-scheduled-flight-model-container2">

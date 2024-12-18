@@ -275,7 +275,7 @@ const AdmAccount = (props) => {
         </div>
         <div onClick={() => {changeWindow(11)}} className={`adm-account-container${button == 11 ? 19 : 20}`}>
           <span className="adm-account-text44">
-            <span className="adm-account-text57">Тип назнач. рейса</span>
+            <span className="adm-account-text57">Тип назнач. рейсов</span>
           </span>
         </div>
         <div onClick={() => {changeWindow(12)}} className={`adm-account-container${button == 12 ? 19 : 20}`}>

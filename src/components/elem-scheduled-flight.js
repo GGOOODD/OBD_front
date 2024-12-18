@@ -33,7 +33,7 @@ const ElemScheduledFlight = (props) => {
       </div>
       <div className="elem-scheduled-flight-container4">
         <span className="elem-scheduled-flight-text14">
-          Дата и время отлёта:
+          Дата и время вылета:
         </span>
         <span className="elem-scheduled-flight-text15">
           {props.datetimeDeparture ?? (

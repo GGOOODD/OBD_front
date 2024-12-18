@@ -65,7 +65,7 @@ const FlightInfo = (props) => {
           <span className="flight-info-text22">{info["arrival"]}</span>
         </div>
         <div className="flight-info-container18">
-          <span className="flight-info-text23">Самолёт:</span>
+          <span className="flight-info-text23">Модель самолёта:</span>
           <span className="flight-info-text24">{info["airplane"]}</span>
         </div>
         <div className="flight-info-container19">

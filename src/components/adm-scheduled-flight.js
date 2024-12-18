@@ -294,7 +294,7 @@ const AdmScheduledFlight = (props) => {
           <input
             type="text"
             id="datetimeDeparture"
-            placeholder="Дата и время отлёта"
+            placeholder="Дата и время вылета"
             className="input"
           />
           <input
